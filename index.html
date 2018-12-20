@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    
+    <!-- Title -->
+    <title>Vivek's Trivia Game</title>
+</head>
+
+<body>
+    <div class="modal fade" id="startMenu" tabindex="-1" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h1 class="modal-title w-100">Ultra Hard Trivia</h1>
+                </div>
+                <div class="modal-body container">
+                    <div class="text-center">
+                        <h2>Pick Your Category</h2>
+                    </div>
+                    <div class="container">
+                        <div id="categories" class="row text-center">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-dark w-100" id="startButton">Start!</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="endMenu" tabindex="-1" data-backdrop="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h1 class="modal-title w-100">Ultra Hard Trivia</h1>
+                    </div>
+                    <div class="modal-body container">
+                        <div class="text-center">
+                            <h2>Here's How You Did</h2>
+                        </div>
+                        <div class="container">
+                            <div id="categories" class="row text-center">
+                                <h4 class="col-12">You got <span id="correct">0</span> answers right.</h4>
+                                <h4 class="col-12">You got <span id="wrong">10</span> answers wrong.</h4>
+                                <h4 class="col-12">Your score is <span id="score">0</span>%</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-dark w-100" id="resetButton">Reset!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	<header class="header">
+        <div class="jumbotron text-center">
+            <div class="row">
+                <h1 class="col-12">Ultra Hard Trivia</h1>
+            </div>
+            <div class="row">
+                <div id="categoryBox" class="col-md-4">
+                    <h3> <strong>Category</strong> <br>
+                        <span id="category">General</span>
+                    </h3>
+                </div>
+                <div id="timeBox" class="col-md-4">
+                    <h3> <strong>Time Remaining</strong> <br>
+                        <span id="time">30</span> seconds
+                    </h3>
+                </div>
+                <div id="questionCount" class="col-md-4">
+                    <h3> <strong>Question</strong> <br>
+                        <span id="questionCurrent">1</span>
+                        of
+                        <span id="questionTotal">10</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+	</header>
+	
+	<section class="main">
+        <div class="content container">
+            <div class="row">
+                <div class="question text-center w-100 col-12" id="question"></div>
+            </div>
+            <div class="answers text-center">
+                    <div class="row">
+                        <div id="answer0" class="answer offset-md-1 col-md-4"></div>
+                        <div id="answer1" class="answer offset-md-2 col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div id="answer2" class="answer offset-md-1 col-md-4"></div>
+                        <div id="answer3" class="answer offset-md-2 col-md-4"></div>
+                    </div>
+            </div>
+            <div class="row message">
+                <button class="btn col-12 nohover btn-dark" id="messageBox">
+                    <h2 id="msg">Get Ready!</h2>
+                </button>
+            </div>
+        </div>
+    </section>
+
+	<footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <p class="col-12">Copyright 2018 Vivek Shimpi</p>
+            </div>
+        </div>
+	</footer>
+
+    <!-- Linking JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js" type="text/javascript"> </script>
+</body>
+
+</html>

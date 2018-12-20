@@ -1,0 +1,95 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    /* position: relative;
+    height: 100vh; */
+}
+
+#startMenu{
+    background-image: radial-gradient(rgb(218, 101, 101),rgb(177, 30, 30));
+}
+
+.modal-dialog{
+    height: 100%;
+    width: 100%;
+}
+
+.categoryBtn {
+    margin: 5px;
+    display: inline-block;
+}
+
+.header{
+    /* height: 30vh; */
+}
+
+.jumbotron{
+    padding: 0px;
+    background-image: linear-gradient(to bottom,rgb(218, 101, 101),rgb(243, 138, 138))
+}
+
+.jumbotron h1{
+    padding: 30px 10px 10px 10px;
+    margin-bottom: 0;
+}
+
+.jumbotron .row {
+    padding-bottom: 10px;
+}
+
+.jumbotron #categoryBox {
+    text-align: center;
+}
+
+.jumbotron #timeBox{
+}
+
+.jumbotron #time {
+
+}
+
+
+.main{
+    height: 50vh;
+    min-height: 200px;
+}
+
+input {
+    color: black;
+}
+
+.question {
+    padding: 30px;
+    text-align: center;
+}
+
+.answer {
+    padding: 10px;
+}
+
+.message {
+    margin: 80px 10px 200px 10px;
+}
+
+.message .btn.nohover:hover {
+    background-color: #343a40;
+    cursor:default;
+}
+
+.footer{
+    margin-top: 30px;
+    height: 70px;
+    background: gray;
+    vertical-align: middle;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer p{
+    margin-top: 20px;
+    min-height: 20px;
+    max-height: 30px;
+}
