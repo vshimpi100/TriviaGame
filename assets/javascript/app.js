@@ -195,6 +195,10 @@ var Game = {
             swapClass("#messageBox","btn-*","btn-success");
             Game.timerStop();
             $("#msg").text("YOU GOT LUCKY");
+
+            var correctSelector = "button:contains("+atob(Game.correct)+")";
+            swapClass(correctSelector,"btn-danger","btn-success");
+
             setTimeout(function(){
                 swapClass("#messageBox","btn-success","btn-dark");
                 Game.nextQuestion();
@@ -207,6 +211,10 @@ var Game = {
             var wrongMsgs = ["WOW YOU'RE TERRIBLE AT THIS","STAY IN SCHOOL KID","DON'T QUIT YOUR DAY JOB","PLEASE JUST STOP","YOU'RE NOT GOING TO GET IT","THIS IS JUST SAD","THE CORRECT ANSWER IS A","YOUR TEACHERS HAVE FAILED YOU","DID YOU PAY MONEY FOR YOUR EDUCATION?"];
             var index = (Math.floor(Math.random()*wrongMsgs.length));
             $("#msg").text(wrongMsgs[index]);
+
+            var correctSelector = "button:contains("+atob(Game.correct)+")";
+            swapClass(correctSelector,"btn-danger","btn-success");
+
             setTimeout(function(){
                 swapClass("#messageBox","btn-danger","btn-dark");
                 Game.nextQuestion();
